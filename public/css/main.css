@@ -1,0 +1,11 @@
+body{
+        font-family: 'open sans',Hevetica,Arial, sans serif;
+     }
+footer{
+        margin:4em 0;
+      }
+.active{
+        background-color: rgba(00,255,00,0.8);
+      }
+
+   
