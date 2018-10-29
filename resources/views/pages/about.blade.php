@@ -1,4 +1,4 @@
-@extends('layouts/default')
+@extends('layouts/default',['title'=>'About',])
 @section('content')
 
 <h2 class="text-center">about</h2>
@@ -13,7 +13,7 @@
 	</div>
 </div>
 
-	<p>Feel free to help to improve the <a href="http://github.com/bolysene" target="_blank">source code</a></p>
+	<p>Feel free to help to improve the <a href="http://github.com/bolysene/laracarte" target="_blank">source code</a></p>
 	<hr>
 	<h2>What is Laramap ?</h2>
 	<p>Laramap is the web by which Laracarte was inspired :). </p>
