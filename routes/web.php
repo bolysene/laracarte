@@ -11,6 +11,20 @@
 |
 */
 
+use App\Mail\ContactMessageCreated;
+
+
 Route::get('/', 'PagesController@home')->name('home');
 
 Route::get('/about', 'PagesController@about')->name('about');
+
+Route::get('/test-email',function(){
+
+
+	return new ContactMessageCreated('Boly','seneboly@gmail.com','Vous avez envie de découvrir un Framework Web, je vous conseille LARAVEL. Il est élégant et facile d\'apprentissage !');
+
+});
+
+
+Route::get('/contact', 'ContactsController@create')->name('contact');
+Route::post('/contact', 'ContactsController@store')->name('contact.store');

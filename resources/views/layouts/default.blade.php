@@ -21,6 +21,8 @@
   <body>
     @include('layouts/partials/_nav')
     @yield('content')
+    @include('flash::message')
+
     @include('layouts/partials/_footer')
 
     <!-- Optional JavaScript -->
